@@ -13,9 +13,10 @@ app.config["DEBUG"] = True
 def main():
     return render_template("index.html", )
 
-@app.route("/get_item_count", methods=['GET'])
+@app.route("/get_item_count", methods=['POST'])
 def get_item_count():
-    url = request.args.get('url')
+    print(request.form.get('url'))
+    url = request.form.get('url')
     # test URL "https://drive.google.com/uc?id=1BtVW0P91nobSx2BZsPKKVgz6pVTYw2KA&export=download"
     # xml = 'https://feeds.skapiec.pl/google-shop-38a3ae44ffe87509ef90a5773c9f1e88.xml'
     data = urlopen(url).read().decode('ascii','ignore')
