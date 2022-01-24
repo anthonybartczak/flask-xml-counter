@@ -7,7 +7,6 @@ import csv
 
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
 
 @app.route("/")
 def main():
@@ -34,3 +33,6 @@ def get_item_count():
             "url": row[0],
             "count": pcount
         }
+
+if __name__ == '__main__':
+    app.run()
