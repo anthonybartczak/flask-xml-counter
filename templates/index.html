@@ -18,15 +18,16 @@
         <label for="urlinput">Insert the URL of your XML file...</label>
         <div class="input-group">
           <input name="url" type="text" class="form-control" id="urlinput" placeholder="https://example.com">
-          <button class="btn btn-secondary" type="submit">Calculate</button>
+          <button class="btn btn-secondary" type="submit">Calculate XML</button>
         </div>
+        <small id="xmlhelp" class="form-text text-muted">You can use the | separator to add more URLs. E.g. url.com|url1.com|url3.com</small>
       </div>
     </form>
     <form action = "/get_item_count_from_csv" method = "POST">
       <label for="fileinput">...or upload the CSV file below.</label>
       <div class="input-group">
         <input name="url" type="text" class="form-control" id="urlinput" placeholder="https://example.com">
-        <button class="btn btn-secondary" type="submit">Calculate</button>
+        <button class="btn btn-secondary" type="submit">Calculate CSV</button>
       </div>
     </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
