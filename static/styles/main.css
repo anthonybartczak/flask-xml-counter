@@ -161,3 +161,24 @@ body {
     width: 700px;
   }
 }
+
+.input-group {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 12px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.post-body {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
