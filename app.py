@@ -27,8 +27,6 @@ def get_item_count():
         data = url.read()
         datadecoded = (data.decode())
         pcount = datadecoded.count("</item>")
-        #print(row[0], "liczba produktow to:  ", produkty)
-        #return datadecoded.count("</item>")
         return {
             "url": row[0],
             "count": pcount
